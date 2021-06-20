@@ -27,3 +27,10 @@ def get_pets_by_breed(pet_shop, dalmation):
     for pet in pet_shop["pets"]:
         if pet ["breed"]==dalmation: matching_breed.append(dalmation)
     return matching_breed
+
+def find_pet_by_name(pet_shop,name):
+    pet = []
+    for pet in pet_shop["pets"]:
+        if pet["name"]=="Arthur":
+         return pet
+
