@@ -48,3 +48,6 @@ def remove_pet_by_name(pet_shop, Arthur):
         if pet["name"] == Arthur: 
             index_to_remove = pet_shop["pets"].index(pet) 
             pet_shop["pets"].pop(3)
+
+def add_pet_to_stock(pet_shop, new_pet):
+     pet_shop["pets"].append(new_pet)           
