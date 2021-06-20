@@ -29,8 +29,22 @@ def get_pets_by_breed(pet_shop, dalmation):
     return matching_breed
 
 def find_pet_by_name(pet_shop,name):
-    pet = []
-    for pet in pet_shop["pets"]:
-        if pet["name"]=="Arthur":
+     for pet in pet_shop["pets"]:
+        if pet["name"]==None:
+         return None
+        elif pet["name"]=="Arthur":
          return pet
 
+# def find_pet_by_name(pet_shop,name):
+#      for pet in pet_shop["pets"]:
+#         if pet["name"]==None:
+#          return None
+#         elif pet["name"]=="Fred":
+#          return pet
+
+def remove_pet_by_name(pet_shop, Arthur): 
+    index_to_remove = 0 
+    for pet in pet_shop["pets"]: 
+        if pet["name"] == Arthur: 
+            index_to_remove = pet_shop["pets"].index(pet) 
+            pet_shop["pets"].pop(3)
