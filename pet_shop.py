@@ -16,3 +16,8 @@ def increase_pets_sold(pet_shop, new_sales):
 def get_stock_count(pet_shop):
     return len(pet_shop["pets"])
 
+def get_pets_by_breed(pet_shop, british_shorthair):
+    matching_breed = []
+    for pet in pet_shop["pets"]:
+        if pet ["breed"]==british_shorthair: matching_breed.append(british_shorthair)
+    return matching_breed
