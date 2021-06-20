@@ -21,3 +21,9 @@ def get_pets_by_breed(pet_shop, british_shorthair):
     for pet in pet_shop["pets"]:
         if pet ["breed"]==british_shorthair: matching_breed.append(british_shorthair)
     return matching_breed
+
+def get_pets_by_breed(pet_shop, dalmation):
+    matching_breed = []
+    for pet in pet_shop["pets"]:
+        if pet ["breed"]==dalmation: matching_breed.append(dalmation)
+    return matching_breed
